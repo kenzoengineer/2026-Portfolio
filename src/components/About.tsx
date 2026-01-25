@@ -228,7 +228,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
             transition={{ duration: 0.6, delay: 0.15 }}
             className={`max-w-3xl mx-auto text-lg md:text-xl ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}
           >
-            Scroll down to explore the interactive cards and see how my interests combine into unique fusions.
+            Scroll down to explore the interactive cards and see how my interests intersect with each other.
           </motion.p>
         </div>
       </section>
