@@ -64,9 +64,9 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
   const colors = darkMode ? darkColors : lightColors
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:your@email.com', label: 'Email' },
+    { icon: Github, href: 'https://github.com/VidaLucia', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/kevinduvida/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:dukevin.4902@gmail.com', label: 'Email' },
   ]
 
   return (
@@ -105,7 +105,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className={`max-w-2xl text-lg md:text-xl ${colors.textSecondary}`}
           >
-            Passionate about TBDX.
+            Passionate about software development.
           </motion.p>
 
           {/* CTA Buttons */}

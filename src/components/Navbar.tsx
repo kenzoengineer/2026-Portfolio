@@ -112,7 +112,7 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode, isAtTop }) =>
 
                         </motion.button>
                         <motion.a
-                                        href="mailto:your-email@example.com"
+                                        href="mailto:dukevin.4902@gmail.com"
                                         whileHover={{scale:1.05}}
                                         whileTap={{scale:0.95}}
                                         className={`hidden lg:block px-6 py-2 font-semibold rounded-full bg-gradient-to-r ${colors.button} text-white shadow-md hover:shadow-lg transition-shadow`}
