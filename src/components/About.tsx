@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import MagicCard from './ui/MagicCard'
 import { CometCard } from './ui/comet-card'
-import baseArtImage from '../assets/hobbies/art2.PNG'
+import baseArtImage from '../assets/hobbies/art2.png'
 import baseGamingImage from '../assets/hobbies/gaming.webp'
 import baseLearningImage from '../assets/hobbies/learn.jpeg'
 import baseCompetitionImage from '../assets/hobbies/competition.jpg'
-import paintingImage from '../assets/hobbies/art.PNG'
+import paintingImage from '../assets/hobbies/art.png'
 import magicImage from '../assets/hobbies/magic.jpg'
 import readingImage from '../assets/hobbies/reading.avif'
 import boardGamesImage from '../assets/hobbies/ROOT.jpg'
@@ -36,6 +36,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
     gradientVia?: string;
     gradientTo?: string;
     accentColor?: string;
+    textSecondaryColor?: string;
     baseBgColor?: string;
     panelBgColor?: string;
     typeLine?: string;
@@ -137,7 +138,6 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
       gradientVia: 'violet-500',
       gradientTo: 'blue-500',
       accentColor: 'text-white',
-      textPrimaryColor: 'text-white',
       textSecondaryColor: 'text-white',
       baseBgColor: 'bg-gradient-to-br from-red-900 via-violet-900 to-blue-900',
       panelBgColor: 'bg-gradient-to-br from-red-800 via-violet-800 to-blue-800',
@@ -277,7 +277,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
         {/* Card Fan - Lower Half */}
         <div className="w-full flex items-end justify-center h-1/2">
           <div className="relative w-full flex items-end justify-center gap-3 md:gap-6 overflow-visible px-3 md:px-5">
-            {cards.map((card, index) => {
+            {cards.map((card) => {
               const isSelected = selectedCards.includes(card.id)
               
               return (

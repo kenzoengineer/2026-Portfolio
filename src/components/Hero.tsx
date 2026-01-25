@@ -144,7 +144,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="flex gap-4"
           >
-            {socialLinks.map((social, index) => (
+            {socialLinks.map((social) => (
               <motion.a
                 key={social.label}
                 href={social.href}
