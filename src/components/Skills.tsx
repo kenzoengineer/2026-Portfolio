@@ -113,7 +113,7 @@ const Skills: React.FC<SkillsProps> = ({ darkMode }) => {
             className="flex md:justify-end justify-center md:self-center"
           >
             <div className={`text-center ${colors.cardBg} border ${colors.cardBorder} rounded-2xl px-6 py-4 shadow-md w-full max-w-sm`}>
-              <p className={`text-xs uppercase tracking-[0.2em] ${colors.textSecondary}`}>Kevin is competent at</p>
+              <p className={`text-xs uppercase tracking-[0.2em] ${colors.textSecondary}`}>Kevin is proficient at</p>
               <div className="mt-1 flex justify-center">
                 <TypewriterEffect key={activeSkill || 'placeholder'} words={typewriterWords} />
               </div>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Mail, Download, ChevronDown } from 'lucide-react'
 import { TypewriterEffect } from './ui/typewriter-effect'
+import resumePDF from '../assets/Kevin.pdf'
 
 interface HeroProps {
   darkMode: boolean
@@ -124,8 +125,8 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
               View My Work
             </motion.a>
             <motion.a
-              href="/resume.pdf"
-              download
+              href={resumePDF}
+              download="Kevin_Du_Resume.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={`px-8 py-3 font-semibold rounded-full border-2 ${

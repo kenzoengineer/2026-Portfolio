@@ -53,7 +53,7 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode, isAtTop }) =>
             >
                 <div className="flex items-center justify-between w-full space-x-6 lg:space-x-8">
                     <motion.a
-                        href="/"
+                        href="#home"
                         whileHover={{ scale: 1.05 }}
                         className="flex items-center space-x-2"
                     >

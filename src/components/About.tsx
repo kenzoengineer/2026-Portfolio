@@ -236,7 +236,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
       <section className="h-screen flex items-center justify-center px-4 py-8 md:py-12">
         <div className={`w-full max-w-7xl h-full flex flex-col items-center justify-between border-4 ${darkMode ? 'border-gray-700' : 'border-gray-300'} px-4 md:px-8`}>
           {/* Combination Display Area - Upper Half */}
-          <div className="w-full flex items-center justify-center px-2 h-1/2 py-4">
+          <div className="w-full flex items-center justify-center px-2 h-1/2 py-4 relative z-20">
           <AnimatePresence mode="wait">
             {currentCombination ? (
               <MagicCard
@@ -275,7 +275,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
         </div>
 
         {/* Card Fan - Lower Half */}
-        <div className="w-full flex items-end justify-center h-1/2">
+        <div className="w-full flex items-end justify-center h-1/2 relative z-10">
           <div className="relative w-full flex items-end justify-center gap-3 md:gap-6 overflow-visible px-3 md:px-5">
             {cards.map((card) => {
               const isSelected = selectedCards.includes(card.id)
